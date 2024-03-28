@@ -106,7 +106,7 @@
             // lblExperincia
             // 
             lblExperincia.AutoSize = true;
-            lblExperincia.Location = new Point(105, 322);
+            lblExperincia.Location = new Point(91, 304);
             lblExperincia.Name = "lblExperincia";
             lblExperincia.Size = new Size(154, 25);
             lblExperincia.TabIndex = 6;
@@ -174,7 +174,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(265, 322);
+            textBox7.Location = new Point(249, 304);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(150, 31);
             textBox7.TabIndex = 15;
