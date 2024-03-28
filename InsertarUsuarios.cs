@@ -37,7 +37,7 @@ namespace Reclutamiento
 
                 NegocioCandidato negocio = new NegocioCandidato();
 
-                int nehocios = negocio.InsertarCandidatos(nombre, apellido, correoElectronico, telefono, experienciaLaboral, educacion, cursosIdiomas);
+                int nehocios = negocio.InsertarCandidato(nombre, apellido, correoElectronico, telefono, experienciaLaboral, educacion, cursosIdiomas);
 
                 if (nehocios > 0)
                 {
@@ -57,6 +57,6 @@ namespace Reclutamiento
             }
 
 
-}
+        }
     }
 }
