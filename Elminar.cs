@@ -21,15 +21,12 @@ namespace Reclutamiento
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int idCandidato;
-            NegocioCandidato negocioCandidato = new NegocioCandidato();
-
-            if (int.TryParse(textBox3.Text, out idCandidato))
+            if (int.TryParse(textBox2.Text, out idCandidato))
             {
                 try
                 {
-                    NegocioCandidato negocio = new NegocioCandidato();
-                    negocio.BorrarCandidato(idCandidato);
-
+                    NegocioCandidato negocioCandidato = new NegocioCandidato();
+                    negocioCandidato.BorrarCandidato(idCandidato);
                     MessageBox.Show("Candidato eliminado correctamente");
                 }
                 catch (Exception ex)
@@ -41,6 +38,7 @@ namespace Reclutamiento
             {
                 MessageBox.Show("Por favor, ingrese un ID de candidato válido");
             }
+
 
 
 

@@ -52,7 +52,7 @@ namespace Reclutamiento
             try
             {
                 int idCandidato = int.Parse(txtID.Text); ;
-              
+
 
                 NegocioCandidato negocio = new NegocioCandidato();
                 DataTable dataTable = negocio.BuscarCandidato(idCandidato);
@@ -68,16 +68,8 @@ namespace Reclutamiento
                     textBox5.Text = row["ExperienciaLaboral"].ToString();
                     textBox6.Text = row["Educacion"].ToString();
                     textBox7.Text = row["CursosIdiomas"].ToString();
-                    // Habilitar la edición de los TextBox
-                    textBox1.ReadOnly = false;
-                    textBox2.ReadOnly = false;
-                    textBox3.ReadOnly = false;
-                    textBox4.ReadOnly = false;
-                    textBox5.ReadOnly = false;
-                    textBox6.ReadOnly = false;
-                    textBox7.ReadOnly = false;
 
-                
+
 
                     MessageBox.Show("Usuario validado correctamente.");
                 }
@@ -94,6 +86,11 @@ namespace Reclutamiento
             }
 
 
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
