@@ -36,11 +36,13 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
+            dataGridViewCandidatos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCandidatos).BeginInit();
             SuspendLayout();
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(189, 259);
+            btnConsultar.Location = new Point(229, 281);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(112, 34);
             btnConsultar.TabIndex = 0;
@@ -50,7 +52,7 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(383, 259);
+            btnSalir.Location = new Point(419, 281);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(112, 34);
             btnSalir.TabIndex = 1;
@@ -106,12 +108,23 @@
             textBox3.Size = new Size(150, 31);
             textBox3.TabIndex = 7;
             // 
+            // dataGridViewCandidatos
+            // 
+            dataGridViewCandidatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCandidatos.Location = new Point(76, 384);
+            dataGridViewCandidatos.Name = "dataGridViewCandidatos";
+            dataGridViewCandidatos.RowHeadersWidth = 62;
+            dataGridViewCandidatos.RowTemplate.Height = 33;
+            dataGridViewCandidatos.Size = new Size(657, 309);
+            dataGridViewCandidatos.TabIndex = 8;
+            // 
             // BuscarCandidato
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 835);
+            Controls.Add(dataGridViewCandidatos);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -122,6 +135,7 @@
             Controls.Add(btnConsultar);
             Name = "BuscarCandidato";
             Text = "BuscarCandidato";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewCandidatos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -136,5 +150,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;
+        private DataGridView dataGridViewCandidatos;
     }
 }

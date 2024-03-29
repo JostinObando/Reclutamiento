@@ -31,8 +31,19 @@ namespace Reclutamiento
 
         private void eliminarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Elminar elminar = new Elminar();    
-            elminar.Show(); 
+            Elminar elminar = new Elminar();
+            elminar.Show();
+        }
+
+        private void recomendarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Actualizar actualizar = new Actualizar();   
+            actualizar.Show();
         }
     }
 }

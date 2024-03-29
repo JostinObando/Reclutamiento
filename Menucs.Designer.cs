@@ -36,6 +36,7 @@
             recomendarCandidatoToolStripMenuItem = new ToolStripMenuItem();
             verCandidatosRecomendadosToolStripMenuItem = new ToolStripMenuItem();
             administrarCurrículosToolStripMenuItem = new ToolStripMenuItem();
+            actualizarCandidatoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // 
             // iniciarProcesoDeSelecciónToolStripMenuItem
             // 
-            iniciarProcesoDeSelecciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { busToolStripMenuItem, agregarCandidatoToolStripMenuItem, eliminarCandidatoToolStripMenuItem, recomendarCandidatoToolStripMenuItem });
+            iniciarProcesoDeSelecciónToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { busToolStripMenuItem, agregarCandidatoToolStripMenuItem, eliminarCandidatoToolStripMenuItem, recomendarCandidatoToolStripMenuItem, actualizarCandidatoToolStripMenuItem });
             iniciarProcesoDeSelecciónToolStripMenuItem.Name = "iniciarProcesoDeSelecciónToolStripMenuItem";
             iniciarProcesoDeSelecciónToolStripMenuItem.Size = new Size(244, 29);
             iniciarProcesoDeSelecciónToolStripMenuItem.Text = "Iniciar proceso de selección";
@@ -82,6 +83,7 @@
             recomendarCandidatoToolStripMenuItem.Name = "recomendarCandidatoToolStripMenuItem";
             recomendarCandidatoToolStripMenuItem.Size = new Size(300, 34);
             recomendarCandidatoToolStripMenuItem.Text = "Recomendar Candidato";
+            recomendarCandidatoToolStripMenuItem.Click += recomendarCandidatoToolStripMenuItem_Click;
             // 
             // verCandidatosRecomendadosToolStripMenuItem
             // 
@@ -94,6 +96,13 @@
             administrarCurrículosToolStripMenuItem.Name = "administrarCurrículosToolStripMenuItem";
             administrarCurrículosToolStripMenuItem.Size = new Size(200, 29);
             administrarCurrículosToolStripMenuItem.Text = "Administrar currículos";
+            // 
+            // actualizarCandidatoToolStripMenuItem
+            // 
+            actualizarCandidatoToolStripMenuItem.Name = "actualizarCandidatoToolStripMenuItem";
+            actualizarCandidatoToolStripMenuItem.Size = new Size(300, 34);
+            actualizarCandidatoToolStripMenuItem.Text = "Actualizar Candidato";
+            actualizarCandidatoToolStripMenuItem.Click += actualizarCandidatoToolStripMenuItem_Click;
             // 
             // Menucs
             // 
@@ -120,5 +129,6 @@
         private ToolStripMenuItem recomendarCandidatoToolStripMenuItem;
         private ToolStripMenuItem verCandidatosRecomendadosToolStripMenuItem;
         private ToolStripMenuItem administrarCurrículosToolStripMenuItem;
+        private ToolStripMenuItem actualizarCandidatoToolStripMenuItem;
     }
 }
