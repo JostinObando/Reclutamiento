@@ -21,7 +21,7 @@ namespace Reclutamiento
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();// cerrar 
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
