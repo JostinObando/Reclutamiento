@@ -23,6 +23,7 @@ namespace Reclutamiento
         {
             try
             {
+                int idCandidato = int.Parse(txtID.Text);
                 string nombre = textBox1.Text;
                 string apellido = textBox2.Text;
                 string correoElectronico = textBox3.Text;
@@ -30,10 +31,10 @@ namespace Reclutamiento
                 string experienciaLaboral = textBox5.Text;
                 string educacion = textBox6.Text;
                 string cursosIdiomas = textBox7.Text;
-                int idCandidato = int.Parse(txtID.Text);
+              
 
                 NegocioCandidato negocio = new NegocioCandidato();
-                DataTable resultado = negocio.ActualizarCandidato(idCandidato, nombre, apellido, correoElectronico, telefono, experienciaLaboral, educacion, cursosIdiomas);
+                int resultado = negocio.ActualizarCandidato(idCandidato, nombre, apellido, correoElectronico, telefono, experienciaLaboral, educacion, cursosIdiomas);
 
                 // Manejar el resultado si es necesario
                 MessageBox.Show("Candidato actualizado correctamente.");

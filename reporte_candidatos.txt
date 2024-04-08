@@ -1,0 +1,3 @@
+IDCandidato	Nombre	Apellido	CorreoElectronico	Telefono	ExperienciaLaboral	Educacion	CursosIdiomas	IDUsuario	
+8	Jostin	Obando	dsads	adsd	5277552	vbccvb	cxbbxc		
+8	Jostin	Obando	gvdfb	vbgdf	vvdfs	fdfds	sdfd		

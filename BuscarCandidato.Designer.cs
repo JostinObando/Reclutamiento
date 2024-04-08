@@ -68,6 +68,7 @@
             lblNombre.Size = new Size(78, 25);
             lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre";
+            lblNombre.Click += lblNombre_Click;
             // 
             // lblApellido
             // 
@@ -77,6 +78,7 @@
             lblApellido.Size = new Size(78, 25);
             lblApellido.TabIndex = 3;
             lblApellido.Text = "Apellido";
+            lblApellido.Click += lblApellido_Click;
             // 
             // lblCedula
             // 
@@ -93,6 +95,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 5;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -100,6 +103,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(150, 31);
             textBox2.TabIndex = 6;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox3
             // 
@@ -107,6 +111,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(150, 31);
             textBox3.TabIndex = 7;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // dataGridViewCandidatos
             // 
@@ -117,6 +122,7 @@
             dataGridViewCandidatos.RowTemplate.Height = 33;
             dataGridViewCandidatos.Size = new Size(657, 309);
             dataGridViewCandidatos.TabIndex = 8;
+            dataGridViewCandidatos.CellContentClick += dataGridViewCandidatos_CellContentClick;
             // 
             // BuscarCandidato
             // 

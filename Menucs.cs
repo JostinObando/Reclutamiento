@@ -37,7 +37,8 @@ namespace Reclutamiento
 
         private void recomendarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Reportes reportes = new Reportes(); 
+            reportes.Show();    
         }
 
         private void actualizarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
