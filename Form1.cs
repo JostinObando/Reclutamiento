@@ -12,45 +12,61 @@ namespace Reclutamiento
 
         }
 
+        private enum Roles
+        {
+            Admin,
+            Usuario
+        }
+        private Roles ValidarCredenciales(string nombreUsuario, string contraseña)
+        {
+            if (nombreUsuario == "Admin" && contraseña == "Admin")
+            {
+                return Roles.Admin;
+            }
+            else if (nombreUsuario == "Usuario" && contraseña == "Admin")
+            {
+                return Roles.Usuario;
+            }
+            else
+            {
+                return Roles.Admin; // Cambia esto a tu lógica de manejo de credenciales incorrectas
+            }
+        }
+
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            // Obtener los valores ingresados por el usuario en los campos de texto
             string nombreUsuario = txtUsuario.Text;
             string contraseña = txtContrasenia.Text;
 
-            // Validar si los campos están vacíos
             if (string.IsNullOrWhiteSpace(nombreUsuario) || string.IsNullOrWhiteSpace(contraseña))
             {
                 MessageBox.Show("Por favor ingrese su nombre de usuario y contraseña.");
                 return;
             }
 
-            // Validar las credenciales de inicio de sesión (aquí se puede agregar lógica adicional según sea necesario)
-            if (ValidarCredenciales(nombreUsuario, contraseña))
-            {
-                // Si las credenciales son válidas, mostrar un mensaje de bienvenida y permitir el acceso a la aplicación
-                MessageBox.Show("¡Bienvenido!");
+            Roles tipoUsuario = ValidarCredenciales(nombreUsuario, contraseña);
 
-                Menucs menucs = new Menucs();
-                menucs.Show(); 
-
-                // Aquí puedes abrir la ventana principal de tu aplicación o realizar otras acciones necesarias
-            }
-            else
+            switch (tipoUsuario)
             {
-                // Si las credenciales no son válidas, mostrar un mensaje de error
-                MessageBox.Show("Nombre de usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
+                case Roles.Admin:
+                    MessageBox.Show("¡Bienvenido, Administrador!");
+                    MenuEmpleador menuEmpleador = new MenuEmpleador();
+                    menuEmpleador.Show();
+                    break;
+                case Roles.Usuario:
+                    MessageBox.Show("¡Bienvenido, Usuario!");
+                    Menucs menucs = new Menucs();
+                    menucs.Show();
+                    break;
+                default:
+                    MessageBox.Show("Nombre de usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.");
+                    break;
             }
         }
 
         // Método para validar las credenciales de inicio de sesión (puedes cambiar esta implementación según tus necesidades)
-        private bool ValidarCredenciales(string nombreUsuario, string contraseña)
-        {
-            // Aquí puedes agregar la lógica para validar las credenciales, por ejemplo, consultando una base de datos o utilizando credenciales predefinidas
-            // Por ahora, solo se simulará una validación simple
-            return nombreUsuario == "Admin" && contraseña == "Admin";
-
-        }
+       
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {

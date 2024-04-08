@@ -19,8 +19,8 @@ namespace Reclutamiento
 
         private void busToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BuscarCandidato buscar = new BuscarCandidato();
-            buscar.Show();
+            // BuscarCandidato buscar = new BuscarCandidato();
+            // buscar.Show();
         }
 
         private void agregarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,20 +31,30 @@ namespace Reclutamiento
 
         private void eliminarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Elminar elminar = new Elminar();
-            elminar.Show();
+            // Elminar elminar = new Elminar();
+            // elminar.Show();
         }
 
         private void recomendarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Reportes reportes = new Reportes(); 
-            reportes.Show();    
+            //  Reportes reportes = new Reportes();
+            // reportes.Show();
         }
 
         private void actualizarCandidatoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Actualizar actualizar = new Actualizar();   
+            Actualizar actualizar = new Actualizar();
             actualizar.Show();
+        }
+
+        private void Menucs_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregarCandidatoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
