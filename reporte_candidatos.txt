@@ -1,3 +1,4 @@
 IDCandidato	Nombre	Apellido	CorreoElectronico	Telefono	ExperienciaLaboral	Educacion	CursosIdiomas	IDUsuario	
-11	Jostin	Obando	FEWDF	FDSD	WDFS	DSC	CDV		
-11	Jostin	Obando	jostin@gmail.com	2	9889898	CUC	PANADERO		
+13	Joseph	Gomes	FEWDF	FDSD	WDFS	DSC	CDV		
+13	Joseph	Gomes	joseph123@gmial.com	Ingles italiano	87471711	CUC	CUC		
+13	Joseph	Gomes	joseph123@gmial.com	Ingles italiano	87471711	CUC	CUC		
