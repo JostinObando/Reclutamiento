@@ -31,7 +31,7 @@ namespace Reclutamiento
                 string experienciaLaboral = textBox5.Text;
                 string educacion = textBox6.Text;
                 string cursosIdiomas = textBox7.Text;
-              
+
 
                 NegocioCandidato negocio = new NegocioCandidato();
                 int resultado = negocio.ActualizarCandidato(idCandidato, nombre, apellido, correoElectronico, telefono, experienciaLaboral, educacion, cursosIdiomas);

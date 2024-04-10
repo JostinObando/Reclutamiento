@@ -83,11 +83,11 @@
             // lblCedula
             // 
             lblCedula.AutoSize = true;
-            lblCedula.Location = new Point(155, 177);
+            lblCedula.Location = new Point(141, 180);
             lblCedula.Name = "lblCedula";
-            lblCedula.Size = new Size(66, 25);
+            lblCedula.Size = new Size(92, 25);
             lblCedula.TabIndex = 4;
-            lblCedula.Text = "Cedula";
+            lblCedula.Text = "id Usuario";
             // 
             // textBox1
             // 

@@ -106,7 +106,7 @@
             // lbleducacion
             // 
             lbleducacion.AutoSize = true;
-            lbleducacion.Location = new Point(466, 278);
+            lbleducacion.Location = new Point(569, 278);
             lbleducacion.Name = "lbleducacion";
             lbleducacion.Size = new Size(92, 25);
             lbleducacion.TabIndex = 6;
@@ -180,21 +180,21 @@
             // 
             textBox5.Location = new Point(297, 272);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(150, 31);
+            textBox5.Size = new Size(278, 31);
             textBox5.TabIndex = 15;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(573, 278);
+            textBox6.Location = new Point(672, 275);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(150, 31);
+            textBox6.Size = new Size(403, 31);
             textBox6.TabIndex = 16;
             // 
             // textBox7
             // 
             textBox7.Location = new Point(297, 339);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(150, 31);
+            textBox7.Size = new Size(432, 31);
             textBox7.TabIndex = 17;
             // 
             // btnBuscar
@@ -212,7 +212,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(863, 794);
+            ClientSize = new Size(1207, 794);
             Controls.Add(btnBuscar);
             Controls.Add(textBox7);
             Controls.Add(textBox6);

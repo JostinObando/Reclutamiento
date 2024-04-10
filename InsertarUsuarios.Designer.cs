@@ -156,7 +156,7 @@
             // 
             textBox4.Location = new Point(545, 150);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 31);
+            textBox4.Size = new Size(353, 31);
             textBox4.TabIndex = 12;
             // 
             // textBox5
@@ -170,14 +170,14 @@
             // 
             textBox6.Location = new Point(545, 228);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(150, 31);
+            textBox6.Size = new Size(353, 31);
             textBox6.TabIndex = 14;
             // 
             // textBox7
             // 
             textBox7.Location = new Point(249, 304);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(150, 31);
+            textBox7.Size = new Size(301, 31);
             textBox7.TabIndex = 15;
             // 
             // InsertarUsuarios
